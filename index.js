@@ -140,20 +140,11 @@
 
 
 
-        function findEmployeebyFirstName(object, fn) {
-            let name
-
-            object.forEach(item => {
-                if (item.firstName == fn) {
-                    name = item
-                    console.log(name)
-                }
-
-
-            })
-            return name
-
-        }
+function findEmployeebyFirstName(emp , firstName){
+        return emp.find(function(fn){
+            return fn.firstName == firstName;
+        });
+    }
 
         function calculatePayroll(object) {
             let arr = [];
