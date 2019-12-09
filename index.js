@@ -141,21 +141,9 @@ let arr = ["n", "a", "b", "c"]
 
 
 
-        function findEmployeebyFirstName(object, fn) {
-            let name
-
-            object.forEach(item => {
-                if (item.firstName == fn) {
-                    name = item
-                    console.log(name)
-                }
-
-
-            })
-            return name
-
-        }
-
+        function findEmployeebyFirstName(empArr,empFN){
+  return empArr.find(emp=>emp.firstName === empFN);
+}
         function calculatePayroll(object) {
             let arr = [];
             let num = 0;
