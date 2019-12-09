@@ -44,7 +44,7 @@ const createTimeOutEvent = function (emp , dateAndTime ){
         });
         return total;
     }
-    const findEmployeebyFirstName = function(emp , firstName){
+   function findEmployeeByFirstName(emp , firstName){
         return emp.find(function(fn){
             return fn.firstName == firstName;
         });
