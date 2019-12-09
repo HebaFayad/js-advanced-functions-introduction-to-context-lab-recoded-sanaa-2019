@@ -140,10 +140,11 @@ let arr = ["n", "a", "b", "c"]
         }
 
 
-
-        function findEmployeebyFirstName(empArr,empFN){
-  return empArr.find(emp=>emp.firstName === empFN);
-}
+ const findEmployeebyFirstName = function(emp , firstName){
+        return emp.find(function(fn){
+            return fn.firstName == firstName;
+        });
+    }
         function calculatePayroll(object) {
             let arr = [];
             let num = 0;
